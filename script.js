@@ -108,6 +108,7 @@ function searchStudent() {
     renderInfo(ListLocalStudent);
   }
 }
+
 function checkValidator(newStudent) {
   const error = {
     isError: false,
