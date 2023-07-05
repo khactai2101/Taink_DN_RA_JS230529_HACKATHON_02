@@ -68,3 +68,10 @@ td {
 .search-form {
   padding-bottom: 10px;
 }
+.name-error,
+.email-error,
+.number-error,
+.address-error {
+  margin-left: 95px;
+  color: red;
+}

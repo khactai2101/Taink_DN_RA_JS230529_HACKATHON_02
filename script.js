@@ -75,7 +75,12 @@ addButton.addEventListener("click", () => {
     address: addressElement,
     gender: gender,
   };
-  ListLocalStudent.push(newStudent);
+  const checkError = checkValidator(newStudent);
+  if (checkError.isError == true) {
+    renderError(checkError);
+  } else {
+    ListLocalStudent.push(newStudent);
+  }
   renderInfo(ListLocalStudent);
 });
 
@@ -110,7 +115,7 @@ function searchStudent() {
 }
 
 function checkValidator(newStudent) {
-  const error = {
+  let error = {
     isError: false,
     nameMessage: "",
     emailMessage: "",
@@ -119,7 +124,7 @@ function checkValidator(newStudent) {
     addressMessage: "",
   };
 
-  if (newStudent.length === 0) {
+  if (newStudent.name === "") {
     error.isError = true;
     error.nameMessage = "Tên không được để trống";
   }
@@ -134,10 +139,23 @@ function checkValidator(newStudent) {
     error.isError = true;
     error.phoneMessage = "Vui long nhap dung dinh dang so dien thoai";
   }
+  if (newStudent.address === "") {
+    error.isError = true;
+    error.addressMessage = "Địa chỉ không được để trống";
+  }
+  return error; //trả về đối tượng lỗi
 }
 
 function renderError(error) {
-  const nameError = document.querySelector("#name-error");
-
+  const nameError = document.querySelector(".name-error");
   nameError.innerHTML = error.nameMessage;
+
+  const emailError = document.querySelector(".email-error");
+  emailError.innerHTML = error.emailMessage;
+
+  const numberError = document.querySelector(".number-error");
+  numberError.innerHTML = error.numberMessage;
+
+  const addressError = document.querySelector(".address-error");
+  addressError.innerHTML = error.addressMessage;
 }
