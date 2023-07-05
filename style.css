@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  gap: 30px;
+}
+.container-right {
+  width: 750px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container-left {
+  width: 400px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.title-left {
+  text-align: center;
+  padding-bottom: 15px;
+}
+/* .input-form input {
+  height: 25px;
+  border-radius: 2px solid black;
+  margin-bottom: 10px;
+  width: 50%;
+} */
+#full-name,
+#email,
+#phone-number,
+#home-town {
+  height: 25px;
+  border-radius: 2px solid black;
+  margin-bottom: 10px;
+  width: 50%;
+}
+#full-name {
+  margin-left: 16px;
+}
+#email {
+  margin-left: 46px;
+}
+#home-town {
+  margin-left: 23px;
+}
+
+.gender-radio input {
+  margin-left: 30px;
+}
+.btn-save {
+  margin-left: 90px;
+  width: 50%;
+  height: 30px;
+}
+table {
+  border: 1px solid black;
+}
+table th {
+  border: 1px solid black;
+}
+table,
+td {
+  border: 1px solid black;
+}
+.search-form {
+  padding-bottom: 10px;
+}
