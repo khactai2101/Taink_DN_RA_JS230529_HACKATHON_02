@@ -70,7 +70,7 @@ td {
 }
 .name-error,
 .email-error,
-.number-error,
+.phone-error,
 .address-error {
   margin-left: 95px;
   color: red;

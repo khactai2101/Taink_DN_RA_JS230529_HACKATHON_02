@@ -153,8 +153,8 @@ function renderError(error) {
   const emailError = document.querySelector(".email-error");
   emailError.innerHTML = error.emailMessage;
 
-  const numberError = document.querySelector(".number-error");
-  numberError.innerHTML = error.numberMessage;
+  const numberError = document.querySelector(".phone-error");
+  numberError.innerHTML = error.phoneMessage;
 
   const addressError = document.querySelector(".address-error");
   addressError.innerHTML = error.addressMessage;
