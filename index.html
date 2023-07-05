@@ -4,6 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <fieldset>
+      <legend>Bài 1</legend>
+      <h3>Viết chương trình kiểm tra xem chuỗi có đối xứng không?</h3>
+      <input type="text" id="isPalindrome" />
+
+      <button id="bai1">Kiểm tra</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Bài 2</legend>
+      <h3>
+        Viết 1 chương trình với đầu vào là 1 chuỗi ký tự và in ra chuỗi đó
+      </h3>
+      <p>-Nếu gặp chữ cái đầu viết hoa chuyển thành chữ thường.</p>
+      <p>-Nếu gặp chữ cái đầu viết thường chuyển thành viết hoa.</p>
+      <input type="text" id="format-character" />
+      <button onclick="bai2()">Kiểm tra</button>
+      <div id="result_2"></div>
+    </fieldset>
+    <fieldset>
+      <legend>Bài 3</legend>
+      <h3>Viết một chương trình tính lãi suất ngân hàng</h3>
+      <p>- Cho người dùng nhập số tiền cần gửi.</p>
+      <p>
+        - Cho người dùng nhập số tháng gửi tiền/ có thể chọn tháng hoặc năm gửi
+        tiền.
+      </p>
+      <p>- Lãi suất 1 năm gửi tiền là 7% / năm.</p>
+
+      <button onclick="bai3()">Kiểm tra</button>
+      <div id="result_3"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Bài 4</legend>
+      <h3>
+        Viết một chương sắp xếp các phần tử là số ở trong mảng theo thứ tự giảm
+        dần
+      </h3>
+      <input type="text" id="result-arr" />
+      <button onclick="bai4()">Kiểm tra</button>
+      <div id="result_4"></div>
+    </fieldset>
+
+    <!-- bai5 -->
+    <fieldset>
+      <legend>Bài 5</legend>
+      <label for="">Thêm nhân viên</label>
+      <input
+        class="add-employee"
+        type="text"
+        placeholder="Nhập tên nhân viên "
+      /><button onclick="handleAdd()">Add</button>
+      <br />
+
+      <label for=""> Update thông tin nhân viên</label>
+      <input
+        class="update-employees"
+        type="text"
+        placeholder="Nhập thông tin update"
+      />
+      <button onclick="handleUpdate()">Upadte</button>
+      <br />
+      <br />
+      <ol class="employees-container"></ol>
+    </fieldset>
+    <script src="script.js"></script>
+  </body>
 </html>
